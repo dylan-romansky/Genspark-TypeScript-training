@@ -10,7 +10,9 @@ class warehouse	{
 	addStock()	{
 		console.log(this.newStock);
 		this.items.push(this.newStock);
-		this.newStock.itemName = "";
+		this.newStock = {
+			itemName: ""
+		};
 	}
 	set stock(name: string)	{
 		console.log("setting "  + name);
